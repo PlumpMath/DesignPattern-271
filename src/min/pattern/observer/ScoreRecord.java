@@ -22,5 +22,4 @@ public class ScoreRecord extends Subject {//구체적인 변경 감시 대상 �
 	}
 	
 	
-	
 }

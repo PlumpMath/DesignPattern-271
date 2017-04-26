@@ -3,11 +3,12 @@ package min.pattern.observer;
 import java.util.ArrayList;
 import java.util.List;
 
+//성적 변경에 관심이 있는 대상 객체를 관리하는 기능
 public abstract class Subject { //추상화 된 변경 관심 대상 데이터
 
-	private static List<Observer> observers = new ArrayList<Observer>();//추상화된 통보 대상 목록
+	private List<Observer> observers = new ArrayList<Observer>();//추상화된 통보 대상 목록
 	
-	public static void attach(Observer observer){ //옵서버, 즉 통보 대상을 추가함.
+	public void attach(Observer observer){ //옵서버, 즉 통보 대상을 추가함.
 		observers.add(observer);
 	}
 	

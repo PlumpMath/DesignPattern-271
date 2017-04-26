@@ -6,11 +6,11 @@ public class Client {
 
 		ScoreRecord scoreRecord = new ScoreRecord();
 		DataSheetView dataSheetView3 = new DataSheetView(scoreRecord, 3);
-		ScoreRecord.attach(dataSheetView3);
+		scoreRecord.attach(dataSheetView3);
 		MinMaxView minMaxView = new MinMaxView(scoreRecord);
 		scoreRecord.attach(minMaxView);
 		
-		//3개 목록 DataSheetView, 5개 목록 DataSheetView, 그리고 MinMaxView가 Observer로 설정됨.
+		//3개 목록 DataSheetView,  그리고 MinMaxView가 Observer로 설정됨.
 		for(int index = 1; index <=5; index++){
 			
 			int score = index *10;

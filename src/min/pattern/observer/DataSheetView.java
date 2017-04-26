@@ -13,10 +13,10 @@ public class DataSheetView implements Observer {
 	}
 	
 	@Override
-	public void update() {
+	public void update() {//점수의 변경을 통보받음
 
-		List<Integer> record = scoreRecord.getScoreRecord();
-		displayScores(record, viewCount);
+		List<Integer> record = scoreRecord.getScoreRecord();//점수를 조회함
+		displayScores(record, viewCount);//조회된 점수를 viewCount만큼만 출력
 		
 	}
 	
